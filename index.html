@@ -171,7 +171,7 @@
           <header>
             <h4>Contact Me</h4>
           </header>
-          <form action="POST" class="form" data-netlify="true" data-netlify-recaptcha="true">
+          <form action="POST" class="form" data-netlify="true">
             <input type="hidden" name="contact" value="form 1">
             <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
@@ -184,7 +184,12 @@
                   <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
                 </div>
                 <div class="col-12">
-                  <input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="6"></input>
+                  <ul class="actions">
+                    <li><input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="6"/></li>
+                  </ul>
+                </div>
+                <div>
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
                 <div class="col-12">
                   <ul class="actions">
